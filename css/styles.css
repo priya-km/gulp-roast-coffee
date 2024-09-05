@@ -1,0 +1,437 @@
+/* Turn on the border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #59331d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 10px solid #d98555;
+}
+
+/* NAVBAR */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+
+.logo img {
+  max-height: 80px;
+}
+nav .logo img {
+  max-width: 150px;
+}
+
+nav .logo {
+  flex-basis: 100%;
+  text-align: left;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: #d98555;
+}
+
+nav ul li a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* Add spacing between nav icons and the text */
+nav ul li a span[aria-hidden="true"] {
+  margin-right: 8px;
+}
+
+
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.product1 {
+  text-align: left;
+  padding: 10px;
+}
+
+.products article {
+  display: flex;
+  height: 245px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.products img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.center {
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.left {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 20px;
+}
+
+/* .right {
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-start;
+} */
+
+.right img {
+  align-self: flex-end;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Article and figure - about and contact pg */
+article {
+  flex-basis: 100%; 
+}
+
+
+figure {
+  margin: 3rem 0 0 0;
+  flex-basis: 100%; 
+  background-color: #59331d;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+  flex-grow: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+
+
+/* FOOTER */
+
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+/* Media queries */
+/* Desktop  */
+
+@media (min-width: 1024px) {
+
+
+  nav .logo {
+    text-align: left;
+  }
+
+  article {
+    flex-basis: 73%;
+  }
+
+  figure {
+    flex-basis: 25%;
+  }
+}
+/* TABLET VIEW */
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+/* NAVBAR */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+nav .logo img {
+  max-width: 150px;
+}
+
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+article {
+    flex-basis: 70%;
+  }
+
+figure {
+    flex-basis: 28%;
+  }
+
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.products article {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.products img {
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.left {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 20px;
+}
+
+.main {
+  height: 100vh; /* makes sure parent has height for centering */
+}
+
+.image-content img {
+  max-width: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+}
+
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .layout {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* vertical */
+    align-items: center; 
+  }
+
+  nav ul li {
+    margin: 5px 0; 
+  }
+  
+  nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  nav ul li a span[aria-hidden="true"] {
+    margin-right: 8px;
+  }
+  
+  .logo {
+    margin-bottom: 20px; 
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .products article {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .products img {
+    max-width: 200%;
+    height: auto;
+  }
+
+  .center, .left {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center; 
+    text-align: left; 
+  }
+
+  .product1, .left > div {
+    text-align: left; 
+  }
+}
+
+.text-content {
+  margin-left: 50px;
+  flex: 1;
+}
+
+.text-content .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #59331d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
